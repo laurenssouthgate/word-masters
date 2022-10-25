@@ -1,0 +1,99 @@
+html {
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.wordmasters {
+    max-width: 295px;
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.scoreboardletter {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    font-size: 40px;
+    color: white;
+    animation: spin 1.5s linear infinite;
+    padding: 10px;
+  }
+  
+  /* rotates clockwise indefinitely */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+.correct {
+  background-color: green;
+}
+
+.close {
+  background-color: rgb(255, 192, 75);
+}
+
+.wrong {
+  background-color: grey;
+}
+
+.invalid {
+  animation: flash 1s;
+}
+
+/* flashes red border and then fades back to gray */
+@keyframes flash {
+  5% {
+    border-color: crimson;
+  }
+
+  100% {
+    border-color: black;
+  }
+}
